@@ -1,0 +1,79 @@
+input.resultadocaja {
+    font-family: fantasy;
+    color: black;
+    background-color: cornflowerblue;
+    border-radius: 12mm;
+    font-size: large;
+}
+input.boton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+    background-color: cornflowerblue;
+    border-radius: 10mm;
+    box-shadow: blue;
+    font-size: large;
+}
+body {
+    background-color: rgb(211, 247, 253);
+}
+table {
+    background-color: lightblue;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Jorge</title>
+  <link rel="stylesheet" href="calculadorajorgecss.css">
+  </head>
+<body>
+    <center>
+    <form name="calculadora">
+             
+        <table border="3">
+<tr>
+    <td colspan="5">
+        <input type="text" class="resultadocaja" name="txnumeros" value="0" disabled>
+    </td>
+</tr>
+<tr>
+    <td><input type="button" class="boton" value="1" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="2" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="3" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="+" onclick="ingresarvalorsuma(this.value)"></td>
+    <td><input type="button" class="boton" value="-" onclick="ingresarvalorresta(this.value)"></td>
+</tr>
+<tr>
+    <td><input type="button" class="boton" value="4" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="5" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="6" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="*" onclick="ingresarvalormult(this.value)"></td>
+    <td><input type="button" class="boton" value="/" onclick="ingresarvalordivi(this.value)"></td>
+</tr>
+<tr>
+    <td><input type="button" class="boton" value="7" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="8" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="9" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="^" onclick="ingresarvalorpoten('**')"></td>
+    <td><input type="button" class="boton" value="√" onclick='raiz()'></td>
+</tr>
+<tr>
+    <td><input type="button" class="boton" value="0" onclick="ingresarnumero(this.value)"></td>
+    <td><input type="button" class="boton" value="." onclick="ingresarpunto(this.value)"></td>
+    <td><input type="button" class="boton" value="C" onclick="limpiar()"></td>
+    <td colspan="2"><input type="button" class="boton" value="  =  " onclick="resultado()"></td>
+</tr>
+
+
+        </table>
+   
+    </form>
+</center>
+<center>
+    <h4 style="font-family: fantasy;">Calculadora Jorge</h4>
+</center>
+</body>
+</html>
+
