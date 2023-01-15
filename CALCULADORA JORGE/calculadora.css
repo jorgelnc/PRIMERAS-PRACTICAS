@@ -1,0 +1,21 @@
+input.resultadocaja {
+    font-family: fantasy;
+    color: black;
+    background-color: cornflowerblue;
+    border-radius: 12mm;
+    font-size: large;
+}
+input.boton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+    background-color: cornflowerblue;
+    border-radius: 10mm;
+    box-shadow: blue;
+    font-size: large;
+}
+body {
+    background-color: rgb(211, 247, 253);
+}
+table {
+    background-color: lightblue;
+}
